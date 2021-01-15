@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" href="/img/log.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0aa6c9539d.js" crossorigin="anonymous"></script>
+    <title>HungerzzRush</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button id="log" type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button id="reg" type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <i id="fb" class="fab fa-facebook fa-lg fa-2x fa-fw"></i>
+                <i id="ig" class="fab fa-instagram fa-lg fa-2x fa-fw"></i>
+                <i id="tw" class="fab fa-twitter fa-lg fa-2x fa-fw"></i>
+            </div>
+
+            <form id="login" class="input_grp">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span class="fp"><a href="#">Forget Password ?</a></span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="register" class="input_grp">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        var a = document.getElementById("log");
+
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
+
+</body>
+</html>

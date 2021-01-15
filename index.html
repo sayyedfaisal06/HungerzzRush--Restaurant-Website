@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/log.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0aa6c9539d.js" crossorigin="anonymous"></script>
+    <title>HungerzzRush</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <h1 class="logo">Hungerzz<span>Rush</span></h1>
+
+            <nav>
+                <ul id="menu_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="/login_signup.html">Login/Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <img src="/img/menu.png" alt="" class="menu-bar" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+
+                <h2>Taste that you have never tasted before.</h2>
+                <h3>Order Amazing Food from different variety</h3>
+                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Eligendi beatae ex ea necessitatibus, reiciendis ab.
+                </p>
+                <button class="orderbutton" type="button">Order Now<img src="/img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/pre.png" class="plate">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <div class="social">
+            <i id="fb" class="fab fa-facebook fa-2x fa-fw"></i>
+            <i id="ig" class="fab fa-instagram fa-2x fa-fw"></i>
+            <i id="tw" class="fab fa-twitter fa-2x fa-fw"></i>
+        </div>
+
+    </div>
+
+    <div id="about" class="hh">
+        <div class="aboutsection">
+            <img id="hung" src="/img/hungerzzrush.png" alt="">
+            <div class="meee">
+                <h1>About Us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque velit illum laudantium aut, maxime cupiditate quisquam, inventore atque totam vel voluptates dolores consequuntur fuga consequatur odit, eos quas. Dicta, omnis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="conn">
+        <div class="contact-box">
+            <form >
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="text" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Subject" required>
+                <textarea type="text" class="input-field textarea-field" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="/img/logoo.png" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quisquam iure, quam officia amet laboriosam.</p>
+            <div class="social_links">
+                <i id="fb" class="fab fa-facebook fa-2x fa-fw"></i>
+                <i id="ig" class="fab fa-instagram fa-2x fa-fw"></i>
+                <i id="tw" class="fab fa-twitter fa-2x fa-fw"></i>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li><h2>Pages</h2>
+            <ul class="box">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </li>
+
+        <li><h2>Categories</h2>
+            <ul class="box">
+                <li><a href="#">Indian</a></li>
+                <li><a href="#">Chinese</a></li>
+                <li><a href="#">Italian</a></li>
+                <li><a href="#">Mexican</a></li>
+            </ul>
+        </li>
+        <li><h2>Address</h2>
+            <ul class="box">
+                <li><a href="#">Akshya Nagar,</a></li>
+                <li><a href="#">1st Block 1st Cross,</a></li>
+                <li><a href="#">Rammurthy nagar,</a></li>
+                <li><a href="#">Bangalore-560016</a></li>
+            </ul>
+        </li>
+        </ul>
+
+        <div class="footer-bottom">
+            <p>All Rights Reserved by &copy; Faisal Sayyed</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menu_list");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if( menuList.style.maxHeight == "0px" )
+                {
+                    menuList.style.maxHeight = "250px";
+                }
+            else 
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    
+</body>
+</html>
